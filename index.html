@@ -12,6 +12,11 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -34,14 +39,40 @@
           <a href="#"><i class="fab fa-instagram-square"></i></a>
         </nav>
         <div class="info-evento">
-          <p class="fecha"><i class="fas fa-calendar-alt"></i> 10-12 Dic</p>
-          <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Guadalajara, MX</p>
+          <div class="clearfix">
+            <p class="fecha"><i class="fas fa-calendar-alt"></i> 10-12 Dic</p>
+            <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Guadalajara, MX</p>
+          </div>
+
+          <h1 class="nombre-sitio">GDLWebCamp</h1>
+          <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
         </div> <!-- Info Evento-->
-        <h1 class="nombre-sitio">GDLWebCamp</h1>
-        <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
+
       </div>
     </div> <!-- Hero -->
   </header>
+
+  <div class="barra">
+    <div class="contenedor clearfix">
+      <div class="logo">
+        <img src="img/logo.svg" alt="logo gdlwebcamp">
+      </div>
+
+      <div class="menu-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navegacion-principal">
+        <a href="#">Conferencia</a>
+        <a href="#">Calendario</a>
+        <a href="#">Invitados</a>
+        <a href="#">Reservaciones</a>
+      </nav>
+
+    </div>
+  </div>
 
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
