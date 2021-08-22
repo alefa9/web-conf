@@ -152,6 +152,12 @@ ul {
   margin-top: 20px;
   display: inline-block;
   transition: all .3s ease;
+  border: 2px solid;
+}
+.button.hollow,
+.button.hollow:hover {
+  background-color: #ffffff;
+  color: #fe4918;
 }
 .button:hover {
   background-color: #e33000;
@@ -536,12 +542,71 @@ div.detalle-evento:last-of-type {
     width: 25%;
   }
 }
-.numero {
+p.numero {
   color: #fe4918;
   font-size: 4em;
   display: block;
   margin: 0 0 10px 0;
   font-family: 'Oswald', sans-serif;
+}
+
+/** Tabla de precios **/
+
+.lista-precios > li {
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .lista-precios > li {
+    float: left;
+    width: 33.3%;
+  }
+}
+.tabla-precio {
+  border: 1px solid #e1e1e1;
+  background-color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+  transition: all .3s ease;
+}
+.tabla-precio:hover {
+  transform: scale(1.1);
+  border: 1px solid #fe4918;
+  box-shadow: 0px 0px 50px #666666;
+}
+
+.tabla-precio ul li {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #868686;
+  line-height: 26px;
+}
+
+.tabla-precio ul li i {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 5px;
+  font-size: 20px;
+  color: green;
+  content: '\f00c';
+  -webkit-font-smoothing: antialiased;
+}
+.tabla-precio h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.tabla-precio p {
+  color: #000000;
+  margin: 20px 0;
+}
+
+/** Mapa **/
+
+.mapa {
+  height: 400px;
+  background-color: green;
 }
 
 /* ==========================================================================
