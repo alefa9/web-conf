@@ -140,6 +140,13 @@ ul {
   padding: 0;
 }
 
+.button.transparente {
+  background-color: transparent;
+}
+.button.transparente:hover {
+  border: 1px solid #fe4918;
+}
+
 .button {
   background-color: #fe4918;
   padding: 10px 40px;
@@ -154,13 +161,14 @@ ul {
   transition: all .3s ease;
   border: 2px solid;
 }
-.button.hollow,
-.button.hollow:hover {
+.hollow,
+.hollow:hover {
   background-color: #ffffff;
   color: #fe4918;
 }
 .button:hover {
   background-color: #e33000;
+  color: #ffffff;
 }
 .float-right {
   float: right;
@@ -679,6 +687,49 @@ blockquote p::before {
   text-transform: none;
   margin-top: 5px;
   font-weight: normal;
+}
+
+/** Newsletter **/
+
+.newsletter {
+  position: relative;
+  height: auto;
+}
+.newsletter::before {
+  background-image: url(../img/bg-newsletter.jpg);
+  content: '';
+}
+.newsletter .contenido {
+  padding: 100px 0;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+.newsletter .contenido p {
+  font-size: 1.2em;
+  text-transform: lowercase;
+}
+
+.newsletter .contenido h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/** Cuenta regresiva **/
+
+.cuenta-regresiva ul li {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .cuenta-regresiva ul li {
+    width: 25%;
+    float: left;
+  }
 }
 
 /* ==========================================================================
