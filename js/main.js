@@ -166,7 +166,13 @@
 })();
 
 $(function () {
+
+    //Lettering
+
+    $('.nombre-sitio').lettering();
+
     //Programa de conferencias
+
     $('.programa-evento .info-curso:first').show();
     $('.menu-programa a:first').addClass('activo');
     $('.menu-programa a').on('click', function () {

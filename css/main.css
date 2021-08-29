@@ -201,6 +201,13 @@ ul {
     max-width: 1100px;
   }
 }
+
+/** Lettering **/
+
+.nombre-sitio span {
+  text-shadow: 0 0 30px black;
+}
+
 /** Header **/
 
 .hero {
