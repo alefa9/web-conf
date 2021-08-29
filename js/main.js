@@ -7,6 +7,16 @@
 
     document.addEventListener('DOMContentLoaded', function () {
 
+        var map = L.map('mapa').setView([-34.603753, -58.381616], 20);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([-34.603753, -58.381616]).addTo(map)
+            .bindPopup('BsAsWebCamp 2021 <br/> Boletos ya disponibles')
+            .openPopup();
+
         // Campos datos usuario
 
         var nombre = document.getElementById('nombre');
