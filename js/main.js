@@ -164,3 +164,17 @@
 
     }); // DOM CONTENT LOADED
 })();
+
+$(function () {
+    //Programa de conferencias
+    $('.programa-evento .info-curso:first').show();
+    $('.menu-programa a:first').addClass('activo');
+    $('.menu-programa a').on('click', function () {
+        $('.menu-programa a').removeClass('activo');
+        $(this).addClass('activo');
+        $('.ocultar').fadeOut(500);
+        var enlace = $(this).attr('href');
+        $(enlace).fadeIn(500);
+        return false;
+    });
+});
