@@ -215,7 +215,7 @@ $(function () {
 
     //Cuenta regresiva
 
-    $('.cuenta-regresiva').countdown('2022/6/7 09:00:00', function (event) {
+    $('.cuenta-regresiva').countdown('2021/12/9 09:00:00', function (event) {
         $('#dias').html(event.strftime('%D'));
         $('#horas').html(event.strftime('%H'));
         $('#minutos').html(event.strftime('%M'));

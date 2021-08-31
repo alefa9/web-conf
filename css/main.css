@@ -957,6 +957,53 @@ h4 {
   text-align: center;
 }
 
+/** Calendario **/
+
+.calendario h3 {
+  background-color: #fe4918;
+  clear: both;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.calendario::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+.calendario .dia {
+  width: 50%;
+  float: left;
+  border: 1px solid #e1e1e1;
+  transition: all .3s ease;
+}
+
+@media (min-width: 768px) {
+  .calendario .dia {
+    width: 33.3%;
+    min-height: 240px;
+    padding-top: 20px;
+  }
+}
+.calendario .dia:hover {
+  background-color: #e1e1e1;
+  -webkit-transform: scale(1.1);
+}
+
+.calendario .dia p.titulo {
+  color: #fe4918;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.calendario .dia p {
+  font-size: 1.1em;
+}
+.calendario .dia i {
+  color: #fe4918;
+  font-size: 1.6em;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
